@@ -744,6 +744,7 @@ int main() {
         cout << output << endl;
         high_resolution_clock::time_point end = high_resolution_clock::now();
         ll count = duration_cast<microseconds>(end - begin).count();
-        cerr << "elapsed time: " << count/1000 << "." << count%1000 << "msec" << endl;
+        //cerr << "elapsed time: " << count/1000 << "." << count%1000 << "msec" << endl;
+        //lignes  modifiée, ça compile bien sur codingame mais avec un message warning si on ne commente pas cette ligne.
     }
 }
